@@ -1,15 +1,17 @@
 use clap::Subcommand;
 
+pub mod version;
+
 /// CLI subcommands for the AEI framework.
 #[derive(Subcommand)]
 pub enum Command {
-    /// Placeholder command reserved for future use.
-    #[command(hide = true)]
-    #[allow(dead_code)]
-    Placeholder,
+    /// Display the AEI framework version.
+    Version,
 }
 
 /// Execute the provided CLI command.
-pub fn execute(_command: Command) {
-    // Implementation will be added once subcommands are defined.
+pub fn execute(command: Command) {
+    match command {
+        Command::Version => version::run(),
+    }
 }

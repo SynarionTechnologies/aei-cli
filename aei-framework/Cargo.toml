@@ -1,0 +1,10 @@
+[package]
+name = "aei-framework"
+version = "0.1.0"
+edition = "2021"
+description = "Minimal API for AEI Framework used by the CLI."
+license = "MPL-2.0"
+
+[lib]
+name = "aei_framework"
+path = "src/lib.rs"
