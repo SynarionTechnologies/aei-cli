@@ -1,0 +1,10 @@
+[package]
+name = "aei-cli"
+version = "0.1.0"
+edition = "2021"
+description = "Command-line interface for the Autonomous & Evolutive Intelligence Framework (AEIF), enabling interactive experimentation, testing, and automation."
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+clap = { version = "4.5.4", features = ["derive"] }
